@@ -1,0 +1,30 @@
+<form [formGroup]="formGroup">
+
+    <div>
+        <label>surname</label>
+        <input type="text" formControlName="surname" />
+    </div>
+    <div>
+        <label>forename</label>
+        <input type="text" formControlName="forename" />
+    </div>
+    <div>
+        <label>gender</label>
+        <select formControlName="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </div>
+    <div>
+        <label>dob</label>
+        <input type="date" formControlName="dob" />
+    </div>
+    <div>
+        <label>submit</label>
+        <button type="submit" (click)="sendData()">submit</button>
+    </div>
+    <div>
+        <label>reset</label>
+        <button type="submit" (click)="resetData()">reset</button>
+    </div>
+</form>
