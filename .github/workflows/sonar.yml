@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
-        
+
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v2
